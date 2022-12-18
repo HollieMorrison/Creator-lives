@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+        },
+        extend: {
+          colors: {
+            'light-grey': '#F2F2F2',
+          },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/global.css">
+  <title>Feed</title>
+</head>
+<body>
+  <div class="container">
+
+    <header class="flex justify-between py-10">
+      <h2 class="text-xl">Creator-lives</h2>
+      <nav class="login">
+        <ul class="flex gap-4 items-center">
+          <li class="text-base">help</li>
+          <li>login</li>
+          <li><button class="btn">Logout</button></li>
+      </ul>
+      </nav>
+    </header>
+        
+  </div>
+
+  <div class="bg-[#efefef] min-h-[100vh]">
+
+    <div class="lg:container flex w-full py-5 gap-10">
+      <div class="bg-white md:w-1/4 hidden md:block" id="left">
+        <div class="flex flex-col justify-between h-full p-3">
+          
+          <div>
+            <div class="flex justify-between">
+              <p>Friends</p>
+              <p>...</p>
+            </div>
+            
+            <ul class="w-full left mt-5">
+            
+              <li class="flex mb-5 justify-between items-center">
+                <div class="flex">
+                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
+                  <span> Hatter </span>
+                </div>
+                <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
+            
+              </li>
+              <li class="flex mb-5 justify-between items-center">
+            
+                <div class="flex">
+                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
+                  <span> Elliot </span>
+                </div>
+                <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
+              </li>
+              <li class="flex mb-5 justify-between items-center">
+            
+                <div class="flex">
+                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
+                  <span> Jacob </span>
+                </div>
+                <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
+              </li>
+              <li class="flex mb-5 justify-between items-center">
+            
+                <div class="flex">
+                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
+                  <span> Iulia </span>
+                </div>
+                <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
+              </li>
+              <li class="flex mb-5 justify-between items-center">
+            
+                <div class="flex">
+                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
+                  <span> Eva </span>
+                </div>
+                <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
+              </li>
+              <li class="flex mb-5 justify-between items-center">
+            
+                <div class="flex">
+                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
+                  <span> Sam </span>
+                </div>
+                <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
+              </li>
+              <li class="flex mb-5 justify-between items-center">
+            
+                <div class="flex">
+                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
+                  <span> Jack </span>
+                </div>
+                <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
+              </li>
+            </ul>
+          </div>
+          
+             <div class="flex justify-evenly text-slate-300">
+              <i class="fa fa-compass text-xl"></i>
+              <i class="fa fa-users text-xl"></i>
+              <i class="fa fa-comments text-xl"></i>
+              <i class="fa fa-heart text-xl"></i>
+            </div>
+
+        </div>
+      </div>
+            
+      <div class="flex flex-col gap-5 mb-5 px-5 md:w-2/4" id="middle">
+
+        <div class="bg-white" id="top">
+          <div class="flex h-full gap-5 p-5 flex-wrap">
+            <img class="flex-1" src="https://via.placeholder.com/100x125" alt="">
+            <img class="flex-1" src="https://via.placeholder.com/100x125" alt="">
+            <img class="flex-1" src="https://via.placeholder.com/100x125" alt="">
+            <img class="flex-1" src="https://via.placeholder.com/100x125" alt="">
+          </div>
+        </div>
+
+        <div class="bg-white h-3/4" id="bottom-1">
+          <div class="grid grid-cols-2 gap-4 p-5" id="images">
+            <div class="relative">
+              <img class="w-full" src="https://via.placeholder.com/500" alt="">
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://via.placeholder.com/300" alt="">
+                <img src="https://via.placeholder.com/300" alt="">
+                <img src="https://via.placeholder.com/300" alt="">
+                <img src="https://via.placeholder.com/300" alt="">
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="mt-5">cat was mean to me please let me back inside but kitty scratches couch bad kitty and attack the dog then pretend like nothing happened or weigh eight pounds but take up a full-size bed. Need to chase tail i show my fluffy belly but it's a trap! if you pet it i will tear up your hand nap all day cats go for world domination for cat ass trophy. Stand in front of the computer screen cat dog hate mouse eat string barf pillow no baths hate everything or scratch me there, elevator butt for break lamps and curl up into a ball... </p>
+            
+
+            <!-- here -->
+
+            <div class="flex my-6">
+
+              <img class="h-10 w-10 mr-5" src="https://via.placeholder.com/30" alt="">
+
+              <form action="" class="w-full h-10">
+                <label for="comment" class="text-lg text-gray-600"></label>
+                <textarea class="w-full h-full resize-none p-2 rounded bg-zinc-100" name="comment" placeholder="Add Comment..."></textarea>
+              </form>
+
+              <div class="w-1/3 flex justify-evenly items-center text-slate-300">
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-comment"></i>
+                <i class="fa fa-share"></i>
+              </div>
+
+          </div>  
+          </div>
+
+        
+      </div>
+
+    </div>
+    <div class="bg-white md:w-1/4 hidden md:block" id="right">
+      <div class="flex flex-col justify-between h-full p-3">
+
+        <div class="flex flex-col">
+          <div class="flex flex-col justify-between h-full bg-blend-overlay p-5">
+            <img class="flex w-full h-32 mb-5 object-cover" src="https://via.placeholder.com/300" alt="">
+            <div class="flex w-full justify-center gap-3">
+              <img class="flex w-[85px] h-[85px] -mt-[32px] rounded" src="../assets/fetchimage.webp" alt="">
+              <div class="flex flex-col justify-end">
+                <h2>Hollie</h2>
+                <p>Web Developer</p>
+              </div>
+            </div>
+            <div class="flex justify-evenly w-full mt-9 py-5">
+              <p class="text-center"> <strong class="text-lg">11K</strong> <br> Followers</p>
+              <p class="text-center"> <strong class="text-lg">1.4K</strong> <br> Following</p>
+            </div>
+          </div>
+          <div class="max-w-lg">
+            <form action="" class="w-full">
+              <div class="mb-2">
+                <label for="comment" class="text-lg text-gray-600"></label>
+                <textarea class="w-full h-20 p-2 rounded bg-zinc-100"
+                  name="comment" placeholder="What do you think, Hollie?"></textarea>
+              </div>
+
+              <div class="flex gap-2">                
+                <button class="px-3 py-2 text-sm text-zinc-700 bg-zinc-100 rounded w-1/2">Image</button>
+                <button class="px-3 py-2 text-sm text-zinc-700 bg-zinc-100 rounded w-1/2">Video</button>
+              </div>
+
+
+              <button class="px-3 py-2 text-sm text-zinc-700 bg-zinc-100 rounded w-full mt-2">Streaming</button>
+            </form>
+          </div>
+        </div>
+
+        
+        <div class="flex justify-evenly text-slate-300">
+          <i class="fa duotone fa-bookmark"></i>
+          <i class="fa fa-bell"></i>
+          <img class="flex w-full w-5 h-5" src="https://via.placeholder.com/100" alt="">
+        </div>
+              
+      </div>
+
+    </div>
+  </div>
+  
+  
+</body>
+</html>

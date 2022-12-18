@@ -17,10 +17,3 @@ h1,h2,h3{
   font-size: 18px;
   line-height: 21px;
 }
-#circle{
-  height: 40px;
-  width: 40px;
-  background: transparent;
-  border: #000 1px solid;
-  border-radius: 100%;
-}
