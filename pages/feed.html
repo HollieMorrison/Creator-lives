@@ -5,20 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        container: {
-          center: true,
-        },
-        extend: {
-          colors: {
-            'light-grey': '#F2F2F2',
-          },
-        }
-      }
-    }
-  </script>
+  <script src="../js/tailwind.config.js"></script>
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
 
@@ -29,12 +17,14 @@
   <div class="container">
 
     <header class="flex justify-between py-10">
-      <h2 class="text-xl">Creator-lives</h2>
+      <h2 class="text-xl font-bold ml-5">Creator-lives</h2>
       <nav class="login">
         <ul class="flex gap-4 items-center">
           <li class="text-base">help</li>
-          <li>login</li>
-          <li><button class="btn">Logout</button></li>
+
+          <li class="cursor-pointer" id="login">login</li>
+          
+          <li><button class="btn" id="logout">Logout</button></li>
       </ul>
       </nav>
     </header>
@@ -45,7 +35,7 @@
 
     <div class="lg:container flex w-full py-5 gap-10">
       <div class="bg-white md:w-1/4 hidden md:block" id="left">
-        <div class="flex flex-col justify-between h-full p-3">
+        <div class="flex flex-col justify-between h-full p-3 max-h-[80vh]">
           
           <div>
             <div class="flex justify-between">
@@ -56,9 +46,17 @@
             <ul class="w-full left mt-5">
             
               <li class="flex mb-5 justify-between items-center">
+            
                 <div class="flex">
-                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
-                  <span> Hatter </span>
+                  <img class="mr-2 rounded h-8 w-8" src="../assets/Connor.jpg" alt="" />
+                  <span> Connor </span>
+                </div>
+                <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
+              </li>
+              <li class="flex mb-5 justify-between items-center">
+                <div class="flex">
+                  <img class="mr-2 rounded h-8 w-8" src="../assets/oliver.jpg" alt="" />
+                  <span> Oliver </span>
                 </div>
                 <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
             
@@ -66,7 +64,7 @@
               <li class="flex mb-5 justify-between items-center">
             
                 <div class="flex">
-                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
+                  <img class="mr-2 rounded h-8 w-8" src="../assets/Elliot.jpg" alt="" />
                   <span> Elliot </span>
                 </div>
                 <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
@@ -74,7 +72,7 @@
               <li class="flex mb-5 justify-between items-center">
             
                 <div class="flex">
-                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
+                  <img class="mr-2 rounded h-8 w-8" src="../assets/Jacob.jpg" alt="" />
                   <span> Jacob </span>
                 </div>
                 <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
@@ -82,7 +80,7 @@
               <li class="flex mb-5 justify-between items-center">
             
                 <div class="flex">
-                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
+                  <img class="mr-2 rounded h-8 w-8" src="../assets/Iulia.jpg" alt="" />
                   <span> Iulia </span>
                 </div>
                 <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
@@ -90,24 +88,24 @@
               <li class="flex mb-5 justify-between items-center">
             
                 <div class="flex">
-                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
-                  <span> Eva </span>
+                  <img class="mr-2 rounded h-8 w-8 object-top" src="../assets/Nathan.jpg" alt="" />
+                  <span> Nathan </span>
                 </div>
                 <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
               </li>
               <li class="flex mb-5 justify-between items-center">
             
                 <div class="flex">
-                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
-                  <span> Sam </span>
+                  <img class="mr-2 rounded h-8 w-8" src="../assets/Hannah.jpg" alt="" />
+                  <span> Hannah </span>
                 </div>
                 <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
               </li>
               <li class="flex mb-5 justify-between items-center">
             
                 <div class="flex">
-                  <img class="mr-2 rounded" src="https://via.placeholder.com/30" alt="" />
-                  <span> Jack </span>
+                  <img class="mr-2 rounded h-8 w-8 object-top" src="../assets/Johnny.jpg" alt="" />
+                  <span> Johnny </span>
                 </div>
                 <div id="greenDotThing" class="h-2 w-2 bg-green-600 rounded-full"></div>
               </li>
@@ -128,26 +126,29 @@
 
         <div class="bg-white" id="top">
           <div class="flex h-full gap-5 p-5 flex-wrap">
-            <img class="flex-1" src="https://via.placeholder.com/100x125" alt="">
-            <img class="flex-1" src="https://via.placeholder.com/100x125" alt="">
-            <img class="flex-1" src="https://via.placeholder.com/100x125" alt="">
-            <img class="flex-1" src="https://via.placeholder.com/100x125" alt="">
+            <img class="flex-1 rounded h-20 w-12" src="../assets/img1.jpg" alt="User 1 upload">
+          
+            <img class="flex-1 rounded h-20 w-12" src="../assets/img2.jpg" alt="User 2 upload">
+            
+            <img class="flex-1 rounded h-20 w-12" src="../assets/img3.jpg" alt="User 3 upload">
+        
+            <img class="flex-1 rounded h-20 w-12 object-top" src="../assets/img4.jpg" alt="User 4 upload">
           </div>
         </div>
 
-        <div class="bg-white h-3/4" id="bottom-1">
+        <div class="bg-white" id="bottom-1">
           <div class="grid grid-cols-2 gap-4 p-5" id="images">
             <div class="relative">
-              <img class="w-full" src="https://via.placeholder.com/500" alt="">
+              <img class="w-full" src="../assets/userMainImg.png" alt="">
             </div>
             <div class="grid grid-cols-2 gap-4">
-                <img src="https://via.placeholder.com/300" alt="">
-                <img src="https://via.placeholder.com/300" alt="">
-                <img src="https://via.placeholder.com/300" alt="">
-                <img src="https://via.placeholder.com/300" alt="">
+                <img src="../assets/userImg.png" alt="User 1 upload">
+                <img src="../assets/userImg2.png" alt="User 2 upload">
+                <img src="../assets/userImg3.png" alt="User 3 upload">
+                <img src="../assets/userImg4.png" alt="User 4 upload">
             </div>
           </div>
-          <div class="p-5">
+          <div class="px-5">
             <p class="mt-5">cat was mean to me please let me back inside but kitty scratches couch bad kitty and attack the dog then pretend like nothing happened or weigh eight pounds but take up a full-size bed. Need to chase tail i show my fluffy belly but it's a trap! if you pet it i will tear up your hand nap all day cats go for world domination for cat ass trophy. Stand in front of the computer screen cat dog hate mouse eat string barf pillow no baths hate everything or scratch me there, elevator butt for break lamps and curl up into a ball... </p>
             
 
@@ -155,7 +156,7 @@
 
             <div class="flex my-6">
 
-              <img class="h-10 w-10 mr-5" src="https://via.placeholder.com/30" alt="">
+              <img class="h-10 w-10 mr-5 rounded" src="../assets/Hollie.jpg" alt="">
 
               <form action="" class="w-full h-10">
                 <label for="comment" class="text-lg text-gray-600"></label>
@@ -176,13 +177,13 @@
 
     </div>
     <div class="bg-white md:w-1/4 hidden md:block" id="right">
-      <div class="flex flex-col justify-between h-full p-3">
+      <div class="flex flex-col justify-between h-full p-3 max-h-[80vh]">
 
         <div class="flex flex-col">
           <div class="flex flex-col justify-between h-full bg-blend-overlay p-5">
-            <img class="flex w-full h-32 mb-5 object-cover" src="https://via.placeholder.com/300" alt="">
+            <img class="flex w-full h-32 mb-5 object-cover rounded" src="../assets/banner.jpg" alt="">
             <div class="flex w-full justify-center gap-3">
-              <img class="flex w-[85px] h-[85px] -mt-[32px] rounded" src="../assets/fetchimage.webp" alt="">
+              <img class="flex w-[85px] h-[85px] -mt-[32px] rounded" src="../assets/Hollie.jpg" alt="">
               <div class="flex flex-col justify-end">
                 <h2>Hollie</h2>
                 <p>Web Developer</p>
@@ -197,7 +198,7 @@
             <form action="" class="w-full">
               <div class="mb-2">
                 <label for="comment" class="text-lg text-gray-600"></label>
-                <textarea class="w-full h-20 p-2 rounded bg-zinc-100"
+                <textarea class="w-full h-20 p-2 rounded bg-zinc-100 resize-none"
                   name="comment" placeholder="What do you think, Hollie?"></textarea>
               </div>
 
@@ -216,7 +217,7 @@
         <div class="flex justify-evenly text-slate-300">
           <i class="fa duotone fa-bookmark"></i>
           <i class="fa fa-bell"></i>
-          <img class="flex w-full w-5 h-5" src="https://via.placeholder.com/100" alt="">
+          <img class="flex w-5 h-5" src="https://via.placeholder.com/100" alt="">
         </div>
               
       </div>
@@ -224,6 +225,6 @@
     </div>
   </div>
   
-  
+  <script src="../js/index.js"></script>
 </body>
 </html>
