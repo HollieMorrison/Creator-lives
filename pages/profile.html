@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../js/tailwind.config.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/global.css">
+  <title>My Profile</title>
+</head>
+
+<body class="bg-gray-100" id="continue">
+  <header class="flex justify-between py-10">
+    <h2 class="text-xl font-bold ml-5">Creator-lives</h2>
+    <nav class="login">
+      <ul class="flex gap-4 items-center">
+        <li class="text-base">help</li>
+        <li class="cursor-pointer" id="login">login</li>
+        <li><button class="btn" id="logout">Logout</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+
+
+    <div class="flex gap-10">
+      <div class="w-1/2 flex justify-end" id="profile-left">
+        <img class="flex mr-2 rounded-full w-36 h-36" src="/assets/Hollie.jpg" alt="Profile picture">
+      </div>
+        <!-- right side -->
+      <div class="w-1/2 flex flex-col" id="profile-right">
+        <!-- top section -->
+        <div class="flex items-center mb-3" id="profile-top">
+          <h1>Hollie Morrison</h1>
+          <div class="flex">
+            <button class="flex px-3 py-2 text-sm text-zinc-700 bg-zinc-100 rounded w-1/2">Follow</button>
+            <button class="flex px-3 py-2 text-sm text-zinc-700 bg-zinc-100 rounded w-1/2">Message</button>
+            <button class="flex px-3 py-2 text-sm text-zinc-700 bg-zinc-100 rounded w-1/2">...</button>
+          </div>
+        </div>
+        <!-- top section -->
+        <!-- middle section -->
+        <div class="flex mb-3" id="profile-middle">
+          <p class="text-center mr-3"> <strong class="text-lg">11K</strong> <br> Followers</p>
+          <p class="text-center"> <strong class="text-lg">1.4K</strong> <br> Following</p>
+        </div>
+        <!-- middle section -->
+        <!-- bottom section -->
+        <div class="w-1/2 flex" id="profile-bottom">
+          <p>My name is Hollie, i am 25 years old. I live in Northampton, England. My hobbies include: Coding, Gaming,
+            Self-care, Gym, Reading, and spending time with my dog!</p>
+        </div>
+      </div>
+      <!-- right side -->
+    
+    </div>
+
+    <div class="h-1/3 bg-white mt-10">
+      <div class="flex justify-center">
+        <img src="/assets/profileimg1.jpg" alt="Image 1" class="mr-2 rounded-full h-24 w-24 object-fit-cover">
+        <img src="/assets/profileimg2.jpg" alt="Image 2" class="mr-2 rounded-full h-24 w-24 object-fit-cover">
+        <img src="/assets/profileimg3.jpg" alt="Image 3" class="mr-2 rounded-full h-24 w-24 object-fit-cover">
+        <img src="/assets/profileimg4.jpg" alt="Image 4" class="mr-2 rounded-full h-24 w-24 object-fit-cover">
+        <img src="/assets/profileimg5.jpg" alt="Image 5" class="mr-2 rounded-full h-24 w-24 object-fit-cover">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+
+</html>
